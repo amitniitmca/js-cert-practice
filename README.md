@@ -5,7 +5,7 @@
 	- let and const are block scoped
 	- const must be initialized with declaration
 	- typeof operators returns a String, telling what type the datatype is
-	- 'typeof' and ('== null' or '== undefined') can be used to check whether variables assigned or not
+	- 'typeof' and ("== null" or "== 'undefined'") can be used to check whether variables assigned or not
 	- variable declared with var can be hoisted
 		(a) Only declaration can be considered
 		(b) Value assignment doesn't works with hoisting
