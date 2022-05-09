@@ -1,4 +1,4 @@
-//  Student(){
+//  function Student(){
 //     this.name = "Sparsh Singh";
 //     this.std = "VI";
 //     this.show = function() {
