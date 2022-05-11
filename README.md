@@ -1,4 +1,4 @@
-# js-cert-practice
+# JD1 Certification Notes
 ## Variables Types & Collections
 	- Boolean, Number, String, BigInt, Symbol, Object, Null and Undefined 
 	- let, var and const	
@@ -25,3 +25,17 @@
 		(e) An array with blank square brackets create an empty array
 	- instanceof operator return true or false, speifying a value is an instance of an object or not
 	- BigInt can be created with a constructor or appending n to an Integer
+	- throw keyword is used to throw exception with a message.
+	- Strings
+		(a) It can be created with constructor or string literal.
+		(b) Strings provides several methods for accessing and manipulating strings.
+		(c) Backtslash '\' can be used to in case of large string to move the remaining to next line.
+		(d) String templates can be used to pass variables inside string using Backtick (`) and (${}).
+	- Numbers
+		(a) It can be created with constructor or number literal.
+		(b) Numbers also provides several methods for accessing and manipulating numbers.
+		(c) There are two ISNAN() function one for Number and one for Global
+			(i) Global IsNAN typecasts the value first before checking the value
+			(ii) Number's IsNAN checks the value before typecasts
+	- Date
+		(a) It can be created using the Date Constructor or using now or parse method
