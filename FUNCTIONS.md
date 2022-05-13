@@ -28,3 +28,11 @@
         (a) toString()
         (b) toString(radix)
     - valueOf (instance)
+
+## Date Functions
+
+    - now (static)
+    - parse (static)
+    - UTC (static)
+    - getDay, getMonth, getFullYear, getHours, getMinutes, getSeconds, getMilliSeconds
+    - setMonth, setFullYear, setHours, setMinutes, setSeconds, setMilliSeconds
