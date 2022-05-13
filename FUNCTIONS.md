@@ -18,4 +18,13 @@
         (b) padStart(length, text) or padEnd(length, text)
     - trim
 
-##
+## Number Functions
+
+    - isNaN (static)
+    - isInteger (static)
+    - parseFloat & parseInt (static)
+    - toFxed (instance) - performs the rounding as well for >=5
+    - toString (instance)
+        (a) toString()
+        (b) toString(radix)
+    - valueOf (instance)
