@@ -43,3 +43,26 @@
     		(ii) Number's IsNAN checks the value before typecasts
     - Date
     	(a) It can be created using the Date Constructor or using now or parse method
+    - Coercion
+    	(a) Coercion with operators
+    		(i) Loose Equality Operators: Primitives to Numbers (null to undefined)
+    		(ii) Comparison Operators: Primitives to Numbers
+    		(iii) Logical Operators: Primitives to Boolean (Between two numbers, then bigger number)
+    		(iv) Arithmetic Operators: Primitives to Numbers (except + with string)
+    		(v) Unary Operators: Primitives to Numbers
+    		(vi) Bitwise Operators: Primitives to Numbers
+    	(b) Coercion with Special Primitives
+    		(i) Symbol			[Boolean: true, Sting: x, Number: x]
+    		(ii) Null			[Boolean: false, Sting: "null", Number: 0]
+    		(iii) Undefined		[Boolean: false, Sting: "undefined", Number: NaN]
+    		(iv) NaN			[Boolean: false, Sting: "NaN", Number: NaN]
+    	(c) Coercion with Objects
+    		(i) Boolean: Always considered True
+    		(ii) Number: Depends on valueOf and toString
+    		(iii) String: Depends on valueOf and toString
+    		(iv) If both toString and valueOf are present then valueOf will be considered.
+    	(d) Explicit Type Coercion
+    		(i) To String: object converts to [object, Object] rest all converts fine
+    		(ii) To Number: Symbol gives error, null & blank array as 0, object & undefined as NaN
+    		(iii) To Boolean : null, undefined and 0 (+,-) are false rest all are true
+
