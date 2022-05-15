@@ -65,4 +65,21 @@
     		(i) To String: object converts to [object, Object] rest all converts fine
     		(ii) To Number: Symbol gives error, null & blank array as 0, object & undefined as NaN
     		(iii) To Boolean : null, undefined and 0 (+,-) are false rest all are true
-
+    - Truthy or Falsy
+    	(a) Truthy Values
+    		(i) true
+    		(ii) Array & Objects (Even Blank)
+    		(iii) Any String (even '0')
+    		(iv) Any Number (except 0 - +ve or -ve)
+    		(v) +Infinty or -Infinity
+    	(b) Falsy Values
+    		(i) false
+    		(ii) 0 (+ve, -ve or 0n)
+    		(iii) empty string
+    		(iv) null or undefined
+    		(v) NaN
+    	(c) Boolean Constructor
+    	(d) Double Bang
+    	(e) Ternary Operator
+    	(f) Equality & Inequality
+    	(g) Logical Operators
