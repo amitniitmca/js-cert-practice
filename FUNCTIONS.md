@@ -21,7 +21,7 @@
     - isNaN (static)
     - isInteger (static)
     - parseFloat & parseInt (static)
-    - toFxed (instance) - performs the rounding as well for >=5
+    - toFixed (instance) - performs the rounding as well for >=5
     - toString (instance)
         (a) toString()
         (b) toString(radix)
