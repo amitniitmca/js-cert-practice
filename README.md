@@ -82,4 +82,16 @@
     	(d) Double Bang
     	(e) Ternary Operator
     	(f) Equality & Inequality
-    	(g) Logical Operators
+    	(g) Logical Operators For Assignments
+			(i) Number && Number - Larger Number
+			(ii) Integer && Float - Integer
+			(iii) Integer && BigN - Integer
+			(iv) Number && String - String
+			(iv) String && String - Longer String
+			(v) Number || Number - Smaller Number
+			(vi) Integer || Float - Integer
+			(vii) Integer || BigN - Integer
+			(viii) Number || String - Number
+			(viii) String || String - Smaller String
+			(ix) Boolean && Type - Boolean
+			(x) Boolean || Type - Type
