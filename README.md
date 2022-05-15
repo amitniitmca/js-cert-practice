@@ -95,3 +95,10 @@
 			(viii) String || String - Smaller String
 			(ix) Boolean && Type - Boolean
 			(x) Boolean || Type - Type
+	- JavaScript Object Notation (JSON)
+		(a) Text based data format - used to store and transmit data
+		(b) JSON format supports - string, number, object, array, boolean and null
+		(c) Before sending Data to Server - Serialized (JSON String) - stringify
+		(d) After receiving Data from Server - Deserialized (JSON Object) - parse
+		(e) JSON consists of only properties and no methods
+		(f) Double quotes around property names is mandatory
