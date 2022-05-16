@@ -149,4 +149,10 @@
 		(f) Both Dot and Bracket notation can be used to access Object Properties
 		(g) Object properties can be deleted using the delete keyword
 		(h) Objects are passed as reference to other variables
+	- Class
+		(a) Class is used to create objects of same kind.
+		(b) Properties and Methods can be created in class.
+		(c) It can be created using class declaration and class expression.
+		(d) Classes are executed in Strict Mode.
+		
 
