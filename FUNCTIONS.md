@@ -70,3 +70,17 @@
     - flat (instance): flattens multi-demensional array upto the depth specified {array, depth}
     - every (instance): checks whether all the elements are matching a criteria {(item, index, array)}
     - some (instance): checks whether any of the elements are matching a criteria {(item, index, array)}
+
+## Object Class Functions
+    - assign (static): copies object to a new object
+    - entries (static): returns an array of all key-value pairs of properties
+    - values (static): returns an array of all values of properties
+    - defineProperties (static): used to define or modify properties (work on a single property)
+    - freeze (static): No change, No Deletion and No Extension (Only extension shows error)
+    - preventExtensions (static): No Extension, but can change and delete
+    - seal (static): No Extension, No Deletion but can change 
+    - is (static): determine whether two values are the same
+    - hasOwnProperty (instance): checks an object contains the specified property as direct property
+    - isPrototypeOf (instance): checks an object is prototype chain of the specified object
+    - toString (instance): returns the string representation of specified object
+    - valueOf (instance): returns the primitive value of the specified object

@@ -140,3 +140,13 @@
 			(ii) returns a generator that can be used with the next() method to iterate over values. 
 			(iii) It uses the yield keyword internally to pause the function and return the value in the current iteration.
 		(m) Iterators - An iterator is a special object that implements a one-at-a-time sequence for a collection of items.
+	- Objects
+		(a) It is a data type with properties.
+		(b) It can be created using Object constructor, Object Initializer or Object.Create() method.
+		(c) It's properties can be traversed using for...in loop, Object.keys(obj) or Object.getOwnPropertyNames(obj).
+		(d) Function defined as property is called method.
+		(e) Getters and Setters can also be defined. (parenthesis are not used to invoke them)
+		(f) Both Dot and Bracket notation can be used to access Object Properties
+		(g) Object properties can be deleted using the delete keyword
+		(h) Objects are passed as reference to other variables
+
