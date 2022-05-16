@@ -149,10 +149,30 @@
 		(f) Both Dot and Bracket notation can be used to access Object Properties
 		(g) Object properties can be deleted using the delete keyword
 		(h) Objects are passed as reference to other variables
-	- Class
+	- Classes
 		(a) Class is used to create objects of same kind.
 		(b) Properties and Methods can be created in class.
 		(c) It can be created using class declaration and class expression.
 		(d) Classes are executed in Strict Mode.
-		
+		(e) Extends keyword is used to inherit a class.
+	- Modules
+		(a) File containing code with its own top-level scope.
+		(b) Allows code to be structured and organized into separate files for modular code development.
+		(c) To access features in a module, they must be explicitly exported.
+		(d) Imported features from a module are read only.
+		(e) Export keyword is used to export a module.
+			(i) we can export a function by placing export in front of it.
+			(ii) we can export more than one functions by keeping all functions in braces with export keyword.
+			(iii) we can use export default to export a function or class. (Only 1 default export per module)
+			(iv) while exporting as keyword can be used to rename features.
+			(v) export from can be used in an aggregating module to export many modules from one module
+		(f) Import keyword is used to import a module. [Module can be imported inside another module]
+			(i) we can import individual feature of a module.
+			(ii) we can import all features of a module using braces and specifying individual name.
+			(iii) we can import all featues using * as <NAME> also.
+			(iv) while importing as keyword can be used to rename features. [exported name should be same for renaming]
+			(v) Dynamic import can also be done with import("...path").then((module)=>) or await import("...path") which will import when this code executes
+		(g) Features of a module are imported as live bindings.
+		(h) In path (.) means current directory, (..) means parent directory
+		(i) Module imports are hoisted, i.e. modules can be imported anywhere in the file
 
