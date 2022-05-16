@@ -102,3 +102,41 @@
 		(d) After receiving Data from Server - Deserialized (JSON Object) - parse
 		(e) JSON consists of only properties and no methods
 		(f) Double quotes around property names is mandatory
+
+## Objects, Functions and Classes
+
+	- Functions - Block of code, declared once and executed many times
+		(a) Functions can be created with a function declaration and function expressions
+			(i) Function Declaration can be hoisted
+			(ii) Function Expressions cannot be hoisted
+		(b) Functions are First Class because they are treated as values, because they can be
+			(i) assigned to a variable
+			(ii) stored in an array
+			(iii) passed to another function
+			(iv) returned from a function
+			(v) defined as property of an object
+		(c) Named Function - Standard Function with a name
+		(d) Anonymous Function - Functions wihout name and part of an expression
+		(e) Recursive Function - Functions calls itself in its definition
+		(f) Outer Function - Function that encloses other function in Nested Functions
+		(g) Inner Function - Function being part of other function in Nested Functions
+		(h) Immediately Invoked Function Expression (IIFE) - Functions that are invoked at the time of definition (iffy)
+		(i) Arrow Function Expression - It is a compact alternative to a traditional function expression, but can't be used in all situations.
+			(i) They don't have their own bindings like this, super etc.
+			(ii) They should not be used as methods
+			(iii) Not suitable for call, apply and bind
+			(iv) Cannot be used as Constructors
+			(v) Cannot use yield withing its body
+			(vi) With single parameter, parenthesis are optional
+			(vii) With single statement, braces are optional
+			(viii) When the braces are removed, return statement should be removed
+		(j) Closures - let us associate data with a function that operates on that data.
+		(k) Function Invoking - Default value of this can be changed
+			(i) Apply - arguments are passed as array
+			(ii) Call - arguments are passed as comma separated values
+			(iii) Bind - arguments are passed as csv and it returns a new function and hence need to be called
+		(l) Generators
+			(i) A generator function, which is defined with an asterisk (*) 
+			(ii) returns a generator that can be used with the next() method to iterate over values. 
+			(iii) It uses the yield keyword internally to pause the function and return the value in the current iteration.
+		(m) Iterators - An iterator is a special object that implements a one-at-a-time sequence for a collection of items.
