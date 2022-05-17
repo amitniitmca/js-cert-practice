@@ -234,3 +234,53 @@
 			(v) Argument variables are created and assigned with values
 		(c) Control flow statements allow changing the flow of code execution. 
 		(d) Statements such as if-else, switch, break and continue may change flow execution based on the requirement.
+
+## Browser and Events
+	- An event is a specific action or occurrence on a web page that is sent to notify code.
+	- Event handlers are functions that are used to handle events.
+	- Events
+		(a) It may represent a user interaction 
+		(b) An automated notification about something happening in the rendering model
+		(c) It can also be triggered programmatically.
+		(d) Each event that occurs in the DOM  is represented by an object based on the Event interface.
+		(e) Event Object provides many useful properties and methods.
+		(f) There are various events that are common across browsers. These are called standard events.
+		(g) A custom event can be created using the CustomEvent() constructor and dispatched using the dispatchEvent() method.
+		(h) The eventDetails parameter also supports the following optional standard properties (all default to false):
+			(i) bubbles - indicates whether the event bubbles.
+			(ii) cancelable - indicates whether the event can be cancelled.
+			(iii) composed - indicates whether the event will trigger listeners outside of a shadow root
+	- Event Handlers
+		(a) There are two approaches for handling events
+			(i) addEventListener
+			(ii) onEvent Handler
+		(b) Consideration with addEventListener()
+			(i) Target - Any object that supports event (which is firing event)
+			(ii) Parameters - Method can accept "optionsObject" (characteristics of event listener) and "useCapture" parameters
+			(iii) Benefits - Allows adding more than 1 events and controlling phase (bubbling or capturing)
+			(iv) Event listener method can be named or anonymous
+			(v) Named Event Listener methods can be removed with removeEventListener
+			(vi) When the handler is invoked, the this keyword is set to the DOM element on which the handler is registered. 
+		(c) Consideration with onEvent() Handlers
+			(i) An event handler can be called programmatically. example button.onclick()
+			(ii) Non-Element objects also support this. example document, window
+			(iii) When the handler is invoked, the this keyword is set to the DOM element on which the handler is registered. 
+	- DOM Event Properties
+		(a) target - Element that triggered the event
+		(b) currentTarget - Element where the event listener is attached
+		(c) clientX - x coordinate of the mouse click
+		(d) clientY - y coordinate of the mouse click
+	- Event Propogation in modern browsers consists of two phases
+		(a) Bubbling - From the target to Outermost element
+		(b) Capturing - From Outermost element to target
+		(c) Default propogation is bubbling
+		(d) Type of propogation can be selecting by third parameter to addEventListener
+		(e) Third parameter is useCapture which is by default false
+		(f) propagation of an event listener can also be specified by passing an “options” object
+			(i) options = {capture: true, once: true}
+			(ii) capture represents useCapture
+			(iii) once = true removes event listener after the first call
+		(g) stopPropogation
+			(i) The stopPropagation() method prevents further propagation of the current event in the capturing and bubbling phases.
+			(ii) It does not prevent the occurrence of default behaviors associated with the event.
+	- preventDefault: The preventDefault() method can be used to prevent the occurrence of the default action associated with an event. 
