@@ -182,7 +182,7 @@
 		(d) In order to extend a class method, the object of the class can be passed as a parameter to the wrapper function and call() method can be used in the function to invoke the class method with the object as the parameter.
 		(e) To decorate a class method, 
 			(i) the method is prefixed with @nameOfDecorator. 
-			(ii) The decorator receives three parameters, namely, target, name, and descriptor.
+			(ii) The decorator receives three parameters, target, name, and descriptor.
 		(f) To decorate a class, 
 			(i) the class is prefixed with @nameOfDecorator. 
 			(ii) The decorator receives only the target parameter which refers to the object passed to the decorator.
@@ -191,6 +191,46 @@
 			(ii) Writable - true if the value of the property may be changed
 			(iii) Configurable - true if the property descriptors of the property can be changed.
 			(iv) Enumerable - true if the property appears during the enumeration of the object’s properties.
-			
-
-
+	- Variable Scope
+		(a) scope defines which variables can be accessed. 
+		(b) There are three types of scope, namely, global scope, function scope and block scope.
+		(c) Child scope can access variables from parent scope.
+		(d) Global scope accessible everywhere
+		(e) Function scope - variables declared in function, they are accessible to inner functions
+			(i) Let, Var and Const all have function scope
+		(f) Block scope - variable declated in any block, they are accessible to inner blocks
+			(i) only let and const can be block scoped
+			(ii) var variables are not block scoped they can be accessed outside block
+	- Hoisting
+		(a) It moves functions and variables to the top of their scope before code execution.
+		(b) It only moves the declaration statements to the top of the scope and not the initialization.
+		(c) It is applicable to variables declared with var and function declaration and not other variables and function expression.
+	- Closure		
+		(a) It enables access to an outer function’s scope from within an inner function. 
+		(b They are generated in JavaScript every time a function is created.
+	- Execution Flow
+		(a) refers to the order of execution of synchronous and asynchronous code
+		(b) It is accomplished with call stack, message queue and event loop
+		(c) Callstack: It is a mechanism that keeps track of the function being called and run.
+		(d) Message Queue: It is a list of messages that needs to be processed. Each message has an associated function that gets called.
+		(e) Event Loop: It monitors the call stack and message queue. when call stack is empty it takes first message from message queue and pushes it to stack.
+		(f) Synchronous tasks is met, and added to call stack and event loop executes it by turn
+		(g) Asynchronous Task
+			(i) As turn came to call stack , callback added to web api with await time
+			(ii) Web api send callback to message queue after waiting time
+			(iii) It will wait in message queue till call stack is empty and then push the callback to call stack
+			(iv) Event loop then executes the callback
+	- Execution Context: It is an environment in which the code is evaluated and executed. 
+		(a) Global Execution Context
+			(i) Global object is created
+			(ii) "this" object is created
+			(iii) Memory space for variables and functions is created
+			(iv) Variables are assigned "undefined", and function declarations are placed in memory
+		(b) Function Execution Context
+			(i) "arguments" object is created
+			(ii) "this" object is created
+			(iii) Memory space for variables and functions is created
+			(iv) Variables are assigned "undefined", and function declarations are placed in memory
+			(v) Argument variables are created and assigned with values
+		(c) Control flow statements allow changing the flow of code execution. 
+		(d) Statements such as if-else, switch, break and continue may change flow execution based on the requirement.
