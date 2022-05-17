@@ -175,4 +175,22 @@
 		(g) Features of a module are imported as live bindings.
 		(h) In path (.) means current directory, (..) means parent directory
 		(i) Module imports are hoisted, i.e. modules can be imported anywhere in the file
+	- Decorator Functions
+		(a) A decorator is a wrapper function that can be used to extend the behavior of another function. 
+		(b) It receives the original function as a parameter and returns a new function with the extended behavior.
+		(c) A decorator is useful for adding features to an existing function without increasing its complexity.
+		(d) In order to extend a class method, the object of the class can be passed as a parameter to the wrapper function and call() method can be used in the function to invoke the class method with the object as the parameter.
+		(e) To decorate a class method, 
+			(i) the method is prefixed with @nameOfDecorator. 
+			(ii) The decorator receives three parameters, namely, target, name, and descriptor.
+		(f) To decorate a class, 
+			(i) the class is prefixed with @nameOfDecorator. 
+			(ii) The decorator receives only the target parameter which refers to the object passed to the decorator.
+		(g) Each object property has a property descriptor -
+			(i) Value - value of the property
+			(ii) Writable - true if the value of the property may be changed
+			(iii) Configurable - true if the property descriptors of the property can be changed.
+			(iv) Enumerable - true if the property appears during the enumeration of the object’s properties.
+			
+
 
