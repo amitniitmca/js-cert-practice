@@ -319,4 +319,41 @@
 				=> It is used to return an array-like object of all child elements that match the specified class name.
 			(iv) getElementsByTagName
 				=> It is used to return an array-like object of all child elements that match a specified tag name.
+	- Chrome Dev Tools
+		(a) A set of developer tools in the Chrome web browser that can be used to investigate code behavior and debug JavaScript code. (b) It has various panels that can be utilized for debugging. 
+		(c) Elements Panel
+			(i) It is used to inspect and modify DOM and CSS. 
+			(ii) The changes are not saved automatically.
+			(iii) The Styles tab can be used to inspect and edit the styles and classes applied to the selected HTML element.
+		(d) Console Panel - It allows running JavaScript code and viewing logged messages.
+		(e) Sources Panel - It consists of tools that can be used for debugging. It has three parts
+			(i) File Navigator - Shows every file that the page requests.
+			(ii) Code Editor 
+				=> Shows the contents of the file that is selected in the File Navigator pane.
+				=> Clicking on the Format button converts the minified code into its pretty-print version.
+				=> Breakpoints are supported in the pretty-print version of a minified JavaScript file.
+				=> All the values can be examined at that moment in time. 
+			(iii) JavaScript Debugging - It contains various tools for inspecting JavaScript code.
+				=> Various types of breakpoints are available.
+				=> One can step through code to walkthrough code execution, one line at a time.
+				=> Scope Pane is used to check the values of variables.
+				=> We can change value of any variable as well in the scope pane.
+				=> The Scope pane allows viewing the local, global and closure variables that are currently defined.
+				=> Watch Pane can be used to monitor the values over time.
+				=> Any valid JavaScript expression can be added for monitoring.
+		(f) Network Panel
+			(i) It can be used to check the network activity of a page.
+			(ii) It an be used to check whether resources are actually being downloaded or uploaded.
+			(iii) The properties of an individualresource, such as HTTP headers,content, and size, can be inspected.
+			(iv) All the network activity is logged in the Network Log.
+			(v) When using Network panel we can disable cache.
+			(vi) Each row in the log represents a resource.
+			(vii) The network panel allows bandwidth throttling to simulate network bandwidth congestion.
+			(viii) It helps to determine how an application behaves in the different network states.
+			(ix) The browser cache can be disabled from the Network panel to prevent caching.
+			(x) when the DevTool is open, different options are available for reloading a page. [Press and hold the Reload Button]
+				=> Normal Reload - the default mode
+				=> Hard Reload - orces the browser to download all resources requested in the current page
+				=> Empty Cache and Hard Reload - clears cached before performing a Hard Reload
+
 		
