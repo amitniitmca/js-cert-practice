@@ -355,5 +355,64 @@
 				=> Normal Reload - the default mode
 				=> Hard Reload - orces the browser to download all resources requested in the current page
 				=> Empty Cache and Hard Reload - clears cached before performing a Hard Reload
-
+	- Browser APIs
+		(a) Built-in constructs in web browsers that allow JavaScript developers to extend the functionality of web pages.	
+		(b) DOM API - Allows to manipulate the structure, style, or content of a web page.
+		(c) Fetch API - Allows making requests to a server, such as to get or create data.
+			(i) It fetches resources asynchronously across the network.
+			(ii) The fetch method takes one required parameter, which is the path to the resource that needs to be fetched.
+			(iii) An optional init parameter can be specified.
+			(iv) init is an object containing any custom settings that need to be applied to the request.
+			(v) The init object can contain options such as method, headers, body, mode, credentials, etc.
+			(vi) The fetch method returns a promise which is fulfilled when a response is available.
+			(vii) The async and await keywords can be used to invoke the fetch method.
+		(d) Geolocation API - Allows getting location information from the user’s device.
+			(i) It can be used to display customized information or plot their location on a map.
+			(ii) The API can be accessed through a call to navigator.geolocation. 
+			(iii) It causes the browser to ask the user for permission to access their data.
+			(iv) Location information can be accessed using getCurrentPosition() and watchPosition().
+			(v) Each method accepts up to three parameters: 
+				=> a mandatory success callback, 
+				=> an optional error callback, 
+				=> an optional PositionOptionsobject
+			(vi) The getCurrentPosition() method retrieves the current location of the device. 
+			(vii) The watchPosition() method allows executing a function when the position changes.
+		(e) History API - Allows navigating and manipulating the browser history.
+			(i) Its methods and properties allow navigation and manipulation of history.
+			(ii) The back, forward and go methods can be used to move backward and forward through the user’s history.
+			(iii) The pushState() method pushes the given data into the session history data. 
+			(iv) The replaceState() method modifies the current history entry.
+			(v) When the active history entry changes, the popstate event is dispatched to the window. 
+			(vi) A listener can be assigned to it.
+			(vii) The popstate event is triggered when a browser action is performed, such as clicking the back button. 
+			(viii) A listener can be assigned to the window.onpopstate property.
+		(f) Canvas API - Allows to draw 2D graphics on a web page programmatically.
+			(i) The Canvas API can be used to draw 2D graphics using the <canvas> element in HTML and JavaScript code.
+			(ii) The getContext() method interface can be used to get the drawing context of a <canvas> element.
+			(iii) The methods and properties of the CanvasRenderingContext2D interface can be used for the drawing of shapes, text, images, and other objects.
+				=> strokeRect() to paint a rectangle
+				=> lineWidth to set the width of lines
+			(iv) The WebGL API also uses the <canvas> element, but it is capable of drawing hardware-accelerated 2D and 3D graphics.
+		(g) URL API - Allows to access and modify the properties of a URL.
+			(i) used to access the components of a given URL
+			(ii) used to modify the properties of the URL
+			(iii) used to get the parameters of the URL.
+			(iv) A URL object can be created for a given URL to parse the URL and get access to its components
+			(v) The parameters of a URL can be obtained by using the search property. 
+			(vi) Individual parameters can be obtained by using the get() method of URLSearchParams.
+			(vii) The URL API provides two interfaces called URL and URLSearchParams
+		(h) Web Storage API - Allows storing data items in session storage and local storage.
+			(i) The Window.sessionStorageproperty can be used store data for the duration of the page session.
+			(ii) The data is stored until the browser or tab is closed. However, the storage limit is 5 MB.
+			(iii) The Window.localStorage property can be used to store data in the local storage with no expiration. 
+			(iv) The data persists even when the browser is closed or reopened. 
+			(v) The storage limit is the maximum.
+			(vi) Invoking either sessionStorage or localStorage creates an instance of the Storage object
+			(vii) The Storage.getItem, Storage.setItem and Storage.removeItem methods can be used to retrieve, get and remove data items.(viii) Storage.clear() can be used to remove all keys from storage.
+		(i) Cookies
+			(i) Cookies are name-value pairs of data stored locally in the user’s device and have lowsize limits. 
+			(ii) When a browser requests a web page, cookies that belong to the page are also sent along the request to the web server.
+			(iii) document.cookie can be used to return all cookies in a format similar to a string
+			(iv) setting the expiration to a date in the past deletes a specified cookie
+		(j) Application Panel - Data persisted between requests such as local storage, session storage, and cookie data can be viewed in the Storage section of the Application panel in DevTools.
 		
