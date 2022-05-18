@@ -283,4 +283,40 @@
 		(g) stopPropogation
 			(i) The stopPropagation() method prevents further propagation of the current event in the capturing and bubbling phases.
 			(ii) It does not prevent the occurrence of default behaviors associated with the event.
-	- preventDefault: The preventDefault() method can be used to prevent the occurrence of the default action associated with an event. 
+	- preventDefault: The preventDefault() method can be used to prevent the occurrence of the default action associated with an event.
+	- Document Object Model (DOM)
+		(a) Represents the structure and content of an HTML document as objects and nodes.
+		(b) DOM API allows accessing and manipulating the structure, style, and content of the web page.
+		(c) Six fundamentals DOM data types
+			(i) Document - Root Document Object of the page
+			(ii) Node - Each object in an HTML document
+			(iii) Element - An element
+			(iv) NodeList - An array of elements
+			(v) Attribute - Standard or Non-Standard property defined on Element
+			(vi) NamedNodeMap - An array of elements whose items can be accessed by name or index.
+		(d) DOM elements can be accessed by using getElementById(), querySelector(), and querySelectorAll().
+		(e) Methods as appendChild() and setAttribute() and properties as innerHTML and style can be used to manipulate the DOM.
+		(f) Window
+			(i) It represents the browser window containing a DOM document.
+			(ii) location - location.href returns or sets the URL of the current window. 
+			(iii) history - contains methods for moving forward or backward or manipulating the browser session history.
+			(iv) open() - used to open a link in current or new window/tab. window size, position, scrollbar visibility, etc. can be set.
+			(v) scrollTo() - used to programmatically scrollto a specific location in the document. 
+		(g) CSS Selectors
+			(i) Tag - "tagname"
+			(ii) id - "#id"
+			(iii) class - ".class"
+			(iv) Tag + Attr + Val - "tagname[attr=val]"
+			(v) 4th element in a group - "tagname:nth-child(4)"
+		(h) Retrieving DOM
+			(i) querySelector
+				=> It is available for retrieving the first matching Element node within the node’s subtree. 
+				=> It returns null if no match is found.
+			(ii) querySelectorAll
+				=> It is used to retrieve a NodeList containing all the matching Element nodes within the node’s subtree. 
+				=> It returns an empty NodeList if no match is found.
+			(iii) getElementsByClassName
+				=> It is used to return an array-like object of all child elements that match the specified class name.
+			(iv) getElementsByTagName
+				=> It is used to return an array-like object of all child elements that match a specified tag name.
+		
