@@ -14,7 +14,7 @@
     - Number, Boolean and String have Wrapper Object
     	(a) If used as method primitive value is returned (typeof returns primitive)
     	(b) If used with new keyword object is created (typeof returns object)
-    - Undefined & Null{
+    - Undefined & Null
     	(a) undefined is assigned by the system
     	(b) user have to assign null, system can't do that
     	(c) typeof a variable assigned undefined is undefined
@@ -25,7 +25,7 @@
     	(c) They can be created with a constructor or literal syntax
     	(d) An array with a single comma or two commas create an array with empty elements (elements are undefined)
     	(e) An array with blank square brackets create an empty array
-    - instanceof operator return true or false, speifying a value is an instance of an object or not
+    - instanceof operator return true or false, specifying a value is an instance of an object or not
     - BigInt can be created with a constructor or appending n to an Integer
     - throw keyword is used to throw exception with a message.
     - Strings
@@ -422,7 +422,6 @@
 			(iii) document.cookie can be used to return all cookies in a format similar to a string
 			(iv) setting the expiration to a date in the past deletes a specified cookie
 		(j) Application Panel - Data persisted between requests such as local storage, session storage, and cookie data can be viewed in the Storage section of the Application panel in DevTools.
-
 ## Server Side JavaScript
 	- Node.js
 		(a) Node.js is a back-end JavaScript runtime environment.
