@@ -341,7 +341,14 @@
 				=> The Scope pane allows viewing the local, global and closure variables that are currently defined.
 				=> Watch Pane can be used to monitor the values over time.
 				=> Any valid JavaScript expression can be added for monitoring.
-		(f) Network Panel
+		(f) Type of Breakpoint
+			(i) Line-of-code - It allows pausing code execution before a specific line of code. It can also be conditional.
+			(ii) DOM change - It pauses code execution on the code that changes a DOM node or its children.
+			(iii) XHR/Fetch - It pauses code execution when the request URL of an XHR contains a certain string.
+			(iv) Event Listener - It pauses on the event listener that runs after a specific event is executed.
+			(v) Exception - It pauses on the line of code that throws a caught or uncaught exception.
+			(vi) Function - It pause code execution when a specific function is called.
+		(g) Network Panel
 			(i) It can be used to check the network activity of a page.
 			(ii) It an be used to check whether resources are actually being downloaded or uploaded.
 			(iii) The properties of an individualresource, such as HTTP headers,content, and size, can be inspected.
@@ -353,7 +360,7 @@
 			(ix) The browser cache can be disabled from the Network panel to prevent caching.
 			(x) when the DevTool is open, different options are available for reloading a page. [Press and hold the Reload Button]
 				=> Normal Reload - the default mode
-				=> Hard Reload - orces the browser to download all resources requested in the current page
+				=> Hard Reload - forces the browser to download all resources requested in the current page
 				=> Empty Cache and Hard Reload - clears cached before performing a Hard Reload
 	- Browser APIs
 		(a) Built-in constructs in web browsers that allow JavaScript developers to extend the functionality of web pages.	
@@ -415,4 +422,56 @@
 			(iii) document.cookie can be used to return all cookies in a format similar to a string
 			(iv) setting the expiration to a date in the past deletes a specified cookie
 		(j) Application Panel - Data persisted between requests such as local storage, session storage, and cookie data can be viewed in the Storage section of the Application panel in DevTools.
-		
+
+## Server Side JavaScript
+	- Node.js
+		(a) Node.js is a back-end JavaScript runtime environment.
+		(b) It allows executing JavaScript code outside a web browser.
+		(c) It can be used to write server-side code.
+		(d) It uses event-driven architecture that allows asynchronous I/O.
+		(e) Main Features
+			(i) V8 Engine - Use to run node.js apps
+			(ii) Non-Blocking - A single non-blocking process is utilized to run a Node.js app. [Not multi-threaded]
+			(iii) ECMAScript - Supports the new ECMAScript standards.
+			(iv) NPM - The npm registry hosts open-source packages.
+			(v) Dynamic Content - Used to produce dynamic web page content by running server-side scripts.
+			(vi) Real Time Apps - Real-time web applications, such as chat apps, can be built. {can handle multiple I/O requests concurrently}
+			(vii) Single Page Apps - Can be used for complex, SPAs that require asynchronous calls and heavy I/O operations.
+			(viii) API - Used for developing RESTful APIsand independent microservices.
+	- HTTP Module
+		(a) Routing can be defined in a Node.js web server to handle incoming HTTP(S) requests, such as GET, POST, PATCH, etc. 
+		(b) It can be implemented using a framework or without it.
+		(c) Node.js can also be used to perform outbound HTTP requests. 
+		(d) For example, a GET requestcan be perform to retrieve data from an external web server. 
+	- FS Module
+		(a) It allows accessing and interacting with the file system on the computer.
+		(b) one can read, copy and write to files.
+		(c) Such operations can be performed synchronously or asynchronously.
+	- Events Module
+		(a) It can be used to work with events in Node.js. 
+		(b) An EventEmitter object can be created to emit events, add an event listener, remove an event listener, etc.
+	- Global Object & Variables
+		(a) Node.js has the global object instead of the window object.
+		(b) It has many useful methods and properties which can be utilized without using require().
+		(c) A global variable can be set implicitly and also explicitly using 'global'.
+		(d) When the var, let or const keyword is used, the variable is scoped to the module.
+		(e) Trying to access a non-global variable using 'global' returns undefined.
+		(f) A global variable can be accessed without using 'global'.
+		(g) The console object provides methods such as console.log() which can be used to write to standard output of any Node.js stream.
+		(h) The process object allows getting information about and controlling the current Node.js process. 
+			=> For example, process.env can be used to access environment variables.
+		(i) Methods such as setImmediate(), setInterval() and setTimeout() can be used to call a function at a specific time.
+		(j) The WebAssembly object provides WebAssembly related functionality to work with low-level code.
+			=> It is used to run code written in multiple languages on the web.
+	- Node Package Manager
+		(a) It is the package manager for Node.js. 
+		(b) It consists of an online registry of open-source packages and a command line client (also called npm).
+		(c) The command line client can be used to install an npm package that is available in the registry. 
+		(d) The package dependencies of a project are listed in the package.json file.
+		(e) The npm install <package-name> command can be used to install aspecific package.
+		(f) The npm install command can be used to install all the dependencies in package.json.
+		(g) The command line client can be used to run tasks by using the npm run <task-name> command. 
+		(h) These are specified as “scripts” in the package.json file.
+		(i) An npm package can be installed as a local install or a global install.
+		(j) To use it in the code, it needs to be imported using require.
+	
