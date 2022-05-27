@@ -543,4 +543,72 @@
 			=> node --eval - used to evaluate the specified JavaScript code
 			=> node --check - used to check the syntax of the code without execution
 			=> node --help - used to print the Node command-line options
- 
+	- Node.js Modules
+		(a) When creating a Node.js application or web server, a developer can make use of three types of modules. 
+			=> Core modules - Build-in and defined in Node.js source
+			=> Local modules - Locally by the developer in the application (helper.js)
+			=> Third-party modules - Found on npm website and can be installed using npm install <package> command
+		(b) Common JS Module System
+			=> Node.js apps use CommonJS for module management.
+			=> It is a specification that defines the behavior of the exports variable and the require function.
+			=> Named Exports
+				* To use a named export, an additional property can be specified on the exports object for the function or object.
+				* For example, exports.user = user;
+			=> Default Exports
+				* To use a default export, the module.exports property can be assigned to a new value.
+				* For example, module.exports = User; (where User is a class)
+			=> Using Exports
+				* The require() function can be added in the main file to use an exported feature.
+				* For example const User = require(‘./helper.js’);
+		(c) Code Modules
+			=> HTTP/HTTPS - Provide classes, methods, and properties for 
+				* creating a web server
+				* handling incoming requests
+				* performing outbound requests
+			=> FS - Provide classes and methods for 
+				* Accessing and interacting with the file system 
+				* For instance, it can be used to read and edit files in the application directory.
+			=> PATH - Provides various methods and properties for 
+				* working with file and directory paths. 
+				* For instance, it can be used to get the last portion of a file path.
+			=> URL - Provides classes, methods, and properties that can be used for 
+				* URL resolution and parsing. 
+				* For instance, it can be used to get the host name portion of a URL
+			=> EVENTS - Provides classes, methods, and properties which allow working with 
+				* events in Node.js. 
+				* For instance, it can be used to emit and handle events.
+			=> UTIL - Provides various utilities that are used for 
+				* supporting the Node.js internal APIs. 
+				* For instance, it can be used to check if a value is a Boolean object.
+			=> QUERYSTRING - Provides access to utilities for 
+				* parsing and formatting URL query strings.
+				* For instance, the querystring.parse() method parses the provided URL query string into key-value pairs
+			=> ASSERT - Provides access to functions that can be used for assertion testing. 
+				* For instance, assert.strictEqual() tests strict equality between the provided actual and expected parameters
+			=> PROCESS - can be used to get 
+				* information about and control the current Node.js process. 
+				* For instance, process.exit() can be used to exit the current process.
+			=> CONSOLE  
+				* enables a simple debugging console similar to the JavaScript console functionality provided by web browsers 
+			=> STREAM - provides an API for 
+				* implementing the stream interface. 
+				* A stream instance, for example, is a request to an HTTP server or the process.stdout property
+			=> OS - provides operating system-related utility methods and properties
+				* such as getting the host name, home directory of the current user, name of the operating system, etc.
+		(d) Local Modules
+			=> A developer can create a local module in a Node.js application for a particular set of functionalities. 
+			=> For example, a helper module can be created, exported and included in the main application file
+		(e) Third Party Modules
+			=> Third-party modules can be downloaded and installed via npm
+			=> The npm website (npmjs.com) can be used to search for third-party modules and access their documentation. 
+			=> Third-party module can be installed for the purpose of development only or running the application.
+			=> Once a third-party module has been installed, it must be loaded using the require()function.
+		(f) Popular 3rd Party Modules
+			=> LODASH - makes it easier to work with objects, arrays, numbers, strings, etc.
+			=> REACT - used for building user interfaces by defining components.
+			=> EXPRESS - web framework that allows building a web server and handling incoming HTTP requests via routes.
+			=> AXIOS - HTTP client that allows making XMLHttpRequests from the browser and http requests from Node.js
+			=> WEBPACK - used to bundle JavaScript modules for usage in the browser and also transform, bundle or package other resources
+			=> CHALK - used for styling the messages logged in the terminal. 
+			=> MOMENT - can be installed to parse, validate, manipulate, and display dates for various use cases
+			=> JEST - testing framework that can be used for creating unit tests for testing JavaScript code
