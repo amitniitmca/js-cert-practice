@@ -473,4 +473,74 @@
 		(h) These are specified as “scripts” in the package.json file.
 		(i) An npm package can be installed as a local install or a global install.
 		(j) To use it in the code, it needs to be imported using require.
-	
+	- Node CLI Commands
+		(a) Node.js offers various command-line options, which include 
+			=> helpful runtime options
+			=> debugging commands
+			=> multiple ways of executing scripts
+		(b) The node <JS_FILE_NAME> command can be used to run an application.
+			=> Command-line parameters can be added. 
+			=> The node command can be used to enter REPL mode.
+			=> REPL stands for Read Evaluate Print Loop.
+			=> It allows executing JavaScript code via the command-line interface. 
+			=> It supports some special commands like .break and .clear. 
+		(c) Commands like node inspect <JS_FILE> can be used for debugging JavaScript code in a Node.js application. 
+			=> It launches the debugger.
+		(d) The REPL mode in Node.js supports some special commands, all of which start with a dot.
+			=> .break - Aborts further input or processing of an expression. It is the same as using Ctrl + C.
+			=> .clear - Resets the REPL context to an empty object and clears any multi-line expression being input.
+			=> .exit - Closes the I/O stream, which causes the REPL to exit.
+			=> .help - Shows a list of REPL commands.
+			=> .save - Saves the current REPL session to the specified file.
+			=> .load - Loads the specified file into the current REPL session.
+			=> .editor - Used to enter the editor mode. Ctrl + D is used to finish, and Ctrl + C is used to cancel.
+		(e) When executing a Node.js application, arguments can be provided. 
+			=> An argument can be standalone or have a key and a value. 
+			=> The ‘argv’ property of the ‘process’ object can be accessed to obtain all the command line arguments.
+		(f) Environment variables allow a Node.js app to behave differently based on the environment. 
+			=> The ‘env’ property of the ‘process’ object is used to access them.
+			=> The environment variable named NODE_ENV is typically used to set the environment, such as production or development. 
+			=> It can be used to enable or disable features like caching.
+			=> The PORT variable is used to specify the port on which the server should listen for incoming requests.
+			=> The NODE_DEBUG variable is used to list the internal modules that the application developerwould like to debug.
+			=> The DEBUG variable is used to list the public modules, such as npm modules, that need to be debugged. 
+			=> It can be set to * to specify all public modules.
+			=> Environment variables can be set using the command line and used in code by accessing process.env
+		(g) NPM Commands
+			=> npm init - This command can be used to create a package.json file in the current project directory
+			=> npm install - This command can be used to install the specified package or all dependencies in package.json
+			=> npm update - This command can be used to update the specified package or all dependencies in package.json
+			=> npm run - This command can be used to run a command from the ‘scripts’ object of the package
+			=> npm start - This command can be used to run a command specified in the ‘start’ property of the package’s ‘scripts’ object
+		(h) Debugging Commands
+			=> Command-line options are available for debugging Node.js code. 
+			=> The node inspect command can be used to launch the debugger. 
+			=> Commands can be executed to set breakpoints, step through code, watch expressions, etc.
+			=> Commands are available to set and clear breakpoints. 
+			=> It is also possible to use a command to watch expression and variable values while debugging.
+			=> The setBreakpoint() or sb() command can be used to set a breakpoint on the 
+				* current line
+				* a specific line
+				* the first line
+				* the first statement of a function’s body.
+			=> A conditional breakpoint can also be set.
+			=> The clearBreakpoint() or cb()command is used to clear a breakpoint.
+			=> The watch(‘expression’)command can be used to watch an expression. 
+			=> The watcherscommand can be used to print the active watchers. 
+			=> The unwatch(‘expression’)command is used to remove an active watcher.
+			=> Stepping Commands
+				* cont (c) 
+				* next (n)
+				* step (s)
+				* out (o)
+				* pause
+		(i) Node Inspector and Dev Tools
+			=> For debugging and profiling, Chrome DevTools can be attached to a Node.js instance. 
+			=> The V8 Inspector can be enabled by using the --inspect flag when starting an app. 
+			=> The --inspect-brk flag can be used instead to break on the first line of application code.
+		(j) Additional Node.js CLI commands
+			=> node --version - used to get the version of Node.js
+			=> node --eval - used to evaluate the specified JavaScript code
+			=> node --check - used to check the syntax of the code without execution
+			=> node --help - used to print the Node command-line options
+ 
