@@ -422,6 +422,60 @@
 			(iii) document.cookie can be used to return all cookies in a format similar to a string
 			(iv) setting the expiration to a date in the past deletes a specified cookie
 		(j) Application Panel - Data persisted between requests such as local storage, session storage, and cookie data can be viewed in the Storage section of the Application panel in DevTools.
+
+## Asynchronous Programming
+	- Asynchronous programming allows executing code separately from the main application code without blocking it. 
+	- It is used when the response of an operation is not immediately available. 
+	- Asynchronous code is written using asynchronous callbacks or promises.
+	- Asynchronous Callback 
+		(a) An asynchronous callback is a function that is passed as an argument to another function that is executed in the background. 
+		(b) It is executed when the background code finishes execution.
+		(c) It is possible to nest asynchronous callbacks when multiple asynchronous operations need to be performed consecutively. 
+		(d) However, too many nested callbacks can make the code hard to read. This is referred to as callback hell.
+	- Promises
+		(a) A promise is an object that is returned by asynchronous code and represents the completion or failure of the async operation. 
+		(b) It is either resolved or rejected. 
+		(c) A .then() block can be used to handle a promise when it is resolved. 
+		(d) A .catch() block can be used to handle a promise when it is rejected. 
+		(e) Multiple .then() blocks can be used when multiple asynchronous operations need to be executed. 
+		(f) The async/await syntax can be used to make it easier to work with promises. 
+		(g) It requires the use of async and await keywords. 
+		(h) The async keyword is added to the front of a function that should contain asynchronous code. 
+		(i) The await keyword is added to the front of an asynchronous function call that returns a promise.
+		(j) Promises, like other asynchronousoperations, are put in the messagequeue, which runs after the processing of the main thread.
+	- Promise State
+		(a) The state of a promise is initially pending. 
+		(b) It then changes to either fulfilled or rejected, depending on whether the asynchronous operation is successful or not. 
+		(c) When a promise is created, resolve(value) or reject(error) is called.
+		(d) Two or more asynchronous operations can be executed consecutively, in which case multiple .then() blocks can be used. 
+		(e) This is called promise chaining. 
+		(f) A single .catch() block can be used at the end for error handling.
+	- Promise Methods
+		(a) Promise.all
+			=> Accepts an array of promises and returns a new promise. 
+			=> It is resolved when all the specified promises are resolved.
+		(b) Promise.allSettled
+			=> Accepts an array of promises and returns the status and value/error for each promise.
+		(c) Promise.race
+			=> Accepts an array of promises and returns the first settled promise.
+		(d) Promise.any
+			=> Accepts an array of promises. 
+			=> When one of the promises is fulfilled, it returns a single promise.
+		(e) Promise.resolve
+			=> Returns a new Promise object that resolves with the specified value.
+		(f) Promise.reject
+			=> Returns a new Promise object that is rejected with the specified error.
+	- Async/Await
+		(a) The async/await syntax makes it easier to work with promises. 
+		(b) It requires using the async and await keywords.
+		(c) The async keyword needs to be added in front of a function declaration to turn the function into an async function.
+		(d) The await keyword can be added infront of any asynchronous promise-based function inside anasync function. 
+			=> It can only be usedinside async functions.
+		(e) A synchronous try...catch statement can be used with async/await to add error handling. 
+			=> The error object is passed to the catch block.
+		(f) An async function also returns a promise.
+
+
 ## Server Side JavaScript
 	- Node.js
 		(a) Node.js is a back-end JavaScript runtime environment.
