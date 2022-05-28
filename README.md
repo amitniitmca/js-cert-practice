@@ -612,3 +612,59 @@
 			=> CHALK - used for styling the messages logged in the terminal. 
 			=> MOMENT - can be installed to parse, validate, manipulate, and display dates for various use cases
 			=> JEST - testing framework that can be used for creating unit tests for testing JavaScript code
+	- NPM Revisited
+		(a) NPM is the package manager for Node.js. 
+		(b) It has three different components, namely, 
+			=> website
+			=> CLI
+			=> registry
+		(c) npm install <package-name> command allows installing a specific package. 
+			=> It can be installed as a development dependency using the --save-dev flag. 
+			=> The -g flag can be added to install it as a global package.
+		(d) The npm update <package-name> command allows updating the specified package. 
+		(e) The npm outdated command can be used to check if any installed packages are outdated. 
+		(f) The npm uninstall <package-name> command can be used to uninstall the specified package.
+		(g) The package.json file lists the dependencies and devDependencies of the package. 
+		(h) The name and version fields are required in the file. 
+		(i) When publishing a new package, the version number should be updated in the file based on the semantic versioning spec.
+		(j) Finding Packages
+			=> The search bar of the npm website (npmjs.com) can be used to search for packages. 
+			=> Each package is ranked according to four criteria, namely, popularity, quality, maintenance, and optimal.
+		(k) Installing Packages
+			=> Once a suitable package is found, it can be installed either locally or globally.
+			=> The npm install <package-name> command can be used in the terminal to install a package locally. 
+			=> The command must be entered in the root of the project directory.
+			=> The npm install -g <package-name> command can be used in the terminal to install a package globally.
+		(l) Using Packages
+			=> Once a package has been installed, it can be used in the code by passing an argument to the require() function.
+		(m) Update Packages
+			=> Local and global packages that have been downloaded from the npm registry can be updated.
+			=> The npm update <package-name> command can be used in the root directory of the project to update the specified package. 
+			=> The -g flag can be used to update a global package.
+			=> The npm outdated command can be used to check the npm registry to determine if any installed packages are outdated. 
+			=> A specific package can also be used to check if that package is outdated.
+		(n) Uninstalling Packages
+			=> The npm uninstall <package-name> command can be used in the terminal to uninstall a package. 
+			=> The -g flag can be used to uninstall a global package.
+		(o) Package.json
+			=> The package.json file contains information about the package. 
+			=> A package must contain a package.json file if it needs to be published to the npm registry.
+			=> The package.json file contains information such as name, description, version, etc. 
+			=> It also lists the package dependencies, including the development dependencies.
+			=> The package.json file makes it easierfor others to manage and install the package. 
+			=> The npm install commandallows installing all the dependencies.
+			=> The npm init -y command can be used in the root of the project directory to create a default package.json file.
+		(p) Dependencies
+			=> To save a package under dependencies, the npm install <package-name> or npm install <package-name> --save-prod  
+			=> To save it under devDependencies, the --save-dev flag should be used instead.
+		(q) Semantic Versioning
+			=> New Product - 1.0.0
+			=> Patch Release - 1.0.1
+			=> Minor Release - 1.1.0
+			=> Major Release - 2.0.0
+		(r) Versioning Operators
+			=> PRIMITIVE - Particular Range
+			=> TILDE - Same Minor Range
+			=> CARAT - Same Major Range
+			=> X-RANGES - Major, Minor or Patch
+
