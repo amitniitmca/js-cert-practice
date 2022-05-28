@@ -474,7 +474,53 @@
 		(e) A synchronous try...catch statement can be used with async/await to add error handling. 
 			=> The error object is passed to the catch block.
 		(f) An async function also returns a promise.
-
+	- Event Loop & Monitor
+		(a) When an asynchronous function completes, and if a callback is provided, the callback method is placed in a message queue. 
+		(b) The job of the event loop is to continuously check the call stack and the message queue. 
+		(c) If the event loop sees that the call stack is empty and a message is queued, 
+			=> it pushes the oldest message into the call stack for processing, 
+			=> and waits for the call stack to be empty again before fetching the next message.
+		(d) Events for a specific object can be monitored by executing the monitorEvents method in the command line of the Console panel. 
+		(e) When an event is invoked on the object, the Event object is logged in the console where its properties can be inspected.
+		(f) Event Loop Working
+			=> The JavaScript runtime engine executes synchronous and asynchronous functions. 
+			=> It uses an event loop to push a message or an asynchronous callback from the message queue for processing after the call stack is emptied.
+			=> Functions are processed in the call stack in a “last-in, first-out” order.
+			=> After an asynchronous function is executed by the browser, its associated callback method is placed in the message queue.
+			=> If there are no functions to process, or when the call stack is empty, the event loop pushes the callback method to the call stack to have it processed.
+		(g) Stack
+			=> The call stack contains functions that are being processed, in which each function is stacked as a frame. 
+			=> After being processed, the function is popped out the call stack.
+		(h) Heap
+			=> Objects that are created during runtime are allocated in a heap,
+			=> It is a term used to describe a large region of memory in the running machine.
+		(i) Queue
+			=> The message/callback/event queue, is where an asynchronous callback waits to be pushed by the event loop into the call stack for processing.
+		(j) Considerations Related to Event Loop
+			=> I/O Handling
+				* Other operations can be performed while waiting for one operation to complete since input and output are handled using events and callbacks.
+			=> Alert & XHR
+				* It is a good practice to avoid using the alert()function to indicate an exception as well as using a synchronousXMLHttpRequest.
+			=> Time Delays
+				* Time delay defined in a setTimeout function indicates the minimumtime only after which its callback method will be processed. 
+				* It is not the exact time.
+			=> Long Messages
+				* When a message takes too longto complete, it is a good practice to break the message into shorter messages to avoid blocking the call stack.
+		(k) Event Monitor
+			=> Events that occur on an object during runtime can be monitored by calling the monitorEvents method in the Console panel. 
+			=> This capability allows inspecting the properties of the invoked event.
+			=> The monitorEvents method allows three ways of specifying the event or events to monitor for a given object.
+				* Event Name
+					-> A single specific name of an event is defined in the command. 
+					-> For example, monitorEvents(element, "click") will log only the click event for the element.
+				* Array of Events
+					-> Events are specified using an arrayto monitor multiple events. 
+					-> For example, monitorEvents(element,["click", "scroll"]) will log click and scroll events for the element.
+				* Event Type
+					-> Events to monitor are specified using their type. 
+					-> For example, monitorEvents(element, “key”) will log the keydown, keyup, keypress, and textInput events.
+			=> monitorEvents() is a console utility function which can only be executed from the browser console. 
+			=> Using it in a JavaScript code will result in a reference error.
 
 ## Server Side JavaScript
 	- Node.js
