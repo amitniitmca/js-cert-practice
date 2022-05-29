@@ -768,3 +768,84 @@
 			=> CARAT - Same Major Range
 			=> X-RANGES - Major, Minor or Patch
 
+
+## Testing
+	- Types of Tests 
+		(a) Unit tests
+			=> Unit tests are designed to verify the behavior of individual units (functions or classes) by providing input and validating if the output is the expected result.
+			=> Difficulty: Easy
+			=> Volume: High
+			=> Execution Stage: Early
+		(b) Integration tests
+			=> An integration test is designed to determine if a process in which individual units are involved or combined will achieve the expected result.
+			=> Difficulty: Medium
+			=> Volume: Medium
+			=> Execution Stage: Middle
+		(c) End-to-End tests
+			=> An end-to-end test is a scenario-based test from an end-user perspective to determine if a process works as expected from beginning to end.
+			=> Difficulty: Hard
+			=> Volume: Low
+			=> Execution Stage: Late
+	- Testing Teminologies
+		(a) CI/CD 
+			=> Continuous Integration/Continuous Deployment
+			=> deliver code more efficiently in an automatedmanner including tests
+		(b) Mocking
+			=> Refers to using a “dummy” to replace a dependency and enable focusing on actual implementation code that is being testedand verify its behavior.
+		(c) Stubbing
+			=> Refers to using an object to replace a dependency and provide fixed response data that will be consumed in the test.
+		(d) Code Coverage
+			=> Refers to informationabout how many lines of code that has been executed or covered in unit tests or a test suite.
+	- Testing Environments
+		(a) Browser
+			=> To test in a browser, an HTML page needs to be created. 
+			=> It should include the libraries required to run the test and the test files that contain JavaScript code and loaded in a browser.
+		(b) Headless Browser
+			=> A headless browser allows runningtests without the need of a browser,or a user interface. 
+			=> Test scripts canbe executed very quickly from the command line.
+		(c) Node.js
+			=> Required libraries & test scripts are imported in Node.js, and a third-party library may be used to simulate a browser in which the tests will be run.
+	- Testing Approaches
+		(a) Blackbox Testing
+			=> The tester does not have any knowledge about the internal structure of an application. 
+			=> It can be considered high-level testing performed from an end-user perspective that focuses on the behavior of the application.
+			=> Highlights
+				* Internal structure of application is not known
+				* Programming knowledge is not required
+				* Main goal is to test application behavior and functionality
+				* Main focus is on the end-user perspective
+				* Software requirements documentation may be required for the tests
+				* This approach may be less time consuming
+				* Testing in this approach is less complex
+				* Test automation is harder to automate
+				* Loosely coupled to app’s internal structure
+		(b) Whitebox Testing
+			=> Testing takes into account the internal code structure of an application. 
+			=> It can be considered low-level testing in which tests are based on the coverage of code statements, branches, paths or conditions known by the tester.
+			=> Highlights
+				* Internal structure of application is known
+				* Programming knowledge is required
+				* Main goal is to test the application’s internal operations and processes
+				* Main focus is on code structure and logic
+				* Internal design documentation may be required for the tests
+				* This approach may be more time consuming
+				* Testing in this approach is more complex
+				* Test automation is easier to automate
+				* Tightly coupled to app’s internal structure
+	- False Assertions
+		(a) False Positive Assertion
+			=> False-positives are test instances that passeven though the application has a defect. 
+			=> This incorrect assertion is more harmful since defective code is left undetected and a functionality is not fully working as it should.
+			=> To help prevent false-positive assertions, 
+				* a test plan should be designed carefully
+				* several test cases should be created to handle different scenarios
+				* test code coverage should be maximized
+				* and a proper testing environment should be ensured
+		(b) False Negative Assertion
+			=> False-negatives are test instances that fail due to a defect in the test itself and not in the application. 
+			=> This incorrect assertion may result in wasted time and resources in trying to find a bug in a perfectly working application.
+			=> These situations may be encountered as a result of 
+				* poorly written test cases
+				* or test data that is incomplete
+				* incorrect or outdated. 
+				* Not having a proper testingenvironment can also contribute as one of the causes
