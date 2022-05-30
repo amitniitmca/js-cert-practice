@@ -847,5 +847,5 @@
 			=> These situations may be encountered as a result of 
 				* poorly written test cases
 				* or test data that is incomplete
-				* incorrect or outdated. 
+				* incorrect or outdated
 				* Not having a proper testingenvironment can also contribute as one of the causes
